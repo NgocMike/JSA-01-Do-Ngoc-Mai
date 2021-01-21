@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Coda+Caption:wght@800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  body{
+    background-image: url(https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_960_720.png);
+    /* background-position: center; */
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+.name{
+position: relative;
+z-index: 2;
+align-self: start;
+margin-top: 60px;
+font-family: 'Balsamiq Sans', cursive;
+font-size: 65px;
+color:rgb(92, 88, 88);
+
+
+}
+
+
+  .datetime{
+    color: #fff;
+    background:rgb(240, 159, 173);
+    font-family: "Segoe UI", sans-serif;
+    width: 500px;
+    padding: 65px 50px;
+    border: 4px solid rgb(78, 136, 138);
+    border-radius: 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .datetime:hover{
+    background: rgb(140, 140, 207);
+    box-shadow: 0 0 30px rgb(151, 110, 151);
+  }
+  
+  .date{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  
+  .time{
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .time span:not(:last-child){
+    position: relative;
+    margin: 0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  
+  .time span:last-child{
+    background: #80b4db;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+    padding: 0 5px;
+    border-radius: 3px;
+  }
+        
