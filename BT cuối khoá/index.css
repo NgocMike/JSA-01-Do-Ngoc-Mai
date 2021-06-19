@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Name {
+    font-size: 35px;
+    margin: 6px 0px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Intro {
+    margin: 3px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+}
+
+img {
+    margin: 20px 0px 10px 480px;
+    width: 10%;
+    height: 10%
+}
+
+.SignIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email {
+    margin: 10px 0 20px 0
+}
+
+.password {
+    margin: 10px 0 20px 0
+}
+
+
+input {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+#button {
+    margin-top: 20px;
+    background-color: rgb(98, 98, 255);
+    color: white;
+    border: none;
+    padding: 15px 155px;
+    border-radius: 40px;
+
+}
+
+form {
+    box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.20);
+    padding: 20px;
+    border-radius: 10px
+}
+
+#email {
+    width: 350px;
+    height: 50px;
+    outline: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#password {
+    width: 350px;
+    height: 50px;
+    outline: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#email:focus {
+    box-shadow: 0 0 10px 0 rgb(83, 83, 197);
+}
+
+#password:focus {
+    box-shadow: 0 0 10px 0 rgb(83, 83, 197);
+}
+
+#wrong {
+    color: red;
+}
+
+.More {
+    display: flex;
+    justify-content: flex-start;
+    justify-content: center;
+}
+
+#join {
+    display: flex;
+    margin-left: 10px;
+    border: none;
+    color: Blue;
+    text-decoration: none;
+    /* padding: 4px; */
+
+}
+
+a:hover p:hover {
+    display: flex;
+    border: 2px solid;
+    background: #23deff;
+    color: white;
+    height: 35px;
+    width: 80px;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#forgot {
+    color: blue;
+}

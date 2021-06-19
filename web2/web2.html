@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel web </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./web2.css">
+    <!-- <link rel="stylesheet" href="Culture.html"> -->
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<!---Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light main-navbar
+      bg m-navbar-light" id="main-navbar">
+    <div class="container">
+        <div class="logo">
+            <a class="navbar-brand" href="#">Toumie</a>
+
+            <img src="./logo.png" class="picLogo">
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav" aria-controls="p-nav"
+            aria-expanded="false" aria-label="toggle-navigation">
+            <span>Menu</span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="my-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="./index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sec1" class="nav-link">Search</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#sec2" class="nav-link">Introduce</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sec3" class="nav-link"> Popular Places </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#sec4" class="nav-link">Popular food</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--End of navbar-->
+<!---Hero-Image-->
+<section class="hero-wrap"
+    style="background-image:url('./stone_rocks_on_beach_sand_under_blue_white_cloudy_sky_with_ocean_waves_hd_beach.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters main-text align-items-center">
+            <div class="col-lg-7 col-md-6 d-flex align-items-end">
+                <div class="text">
+                    <h1 class="mb-4 text-capitalize">find a perfect deal<br>
+                        for your next trip
+                    </h1>
+                    <p style="font-size:30px;">
+                        Find ur paradise here, come to us now !!!!</p>
+                    <!-- <a href="#" class="btn btn-hero py-2 px-3">View all</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---End of Hero-Image-->
+
+<!---Search section-->
+<section>
+    <div class="section-search" id="sec1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 tab-search">
+                    <div class="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link p-3 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home"
+                            role="tab" aria-controls="v-pills-home" aria-selected="true">Flights</a>
+                        <a class="nav-link p-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile"
+                            role="tab" aria-controls="v-pills-profile" aria-selected="false"> Hotels</a>
+                        <a class="nav-link p-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages"
+                            role="tab" aria-controls="v-pills-messages" aria-selected="false">Car Rents</a>
+                        <a class="nav-link p-3" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings"
+                            role="tab" aria-controls="v-pills-settings" aria-selected="false"> Cruises</a>
+                    </div>
+                </div>
+
+                <div class="tab-content py-5" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                        aria-labelledby="v-pills-home-tab">
+                        <div class="block-17">
+                            <form class="d-block d-lg-flex">
+                                <div class="fields d-block d-lg-flex">
+
+                                    <div class="textfield-search one-third"><input type="text" class="form-control"
+                                            placeholder="Search Location"></div>
+
+                                    <div class="check-in one-third"><input type="text" id="checkin_date"
+                                            class="form-control" placeholder="Check-in date"></div>
+
+                                    <div class="check-out one-third"><input type="text" id="checkout_date"
+                                            class="form-control" placeholder="Check-out date"></div>
+                                    <div class="select-wrap one-third">
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Guest</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3+</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="submit" class="search-submit btn btn-primary" value="Find Flights">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                        aria-labelledby="v-pills-profile-tab">
+                        <div class="block-17">
+                            <form action="" method="post" class="d-block d-lg-flex">
+                                <div class="fields d-block d-lg-flex">
+                                    <div class="textfield-search one-third"><input type="text" class="form-control"
+                                            placeholder="Search Hotel"></div>
+
+                                    <div class="check-in one-third"><input type="text" id="checkin_date"
+                                            class="form-control" placeholder="Check-in date"></div>
+
+                                    <div class="check-out one-third"><input type="text" id="checkout_date"
+                                            class="form-control" placeholder="Check-out date"></div>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Guest</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3+</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="submit" class="search-submit btn btn-primary" value="Find Hotels">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                        aria-labelledby="v-pills-messages-tab">
+                        <div class="block-17">
+                            <form action="" method="post" class="d-block d-lg-flex">
+                                <div class="fields d-block d-lg-flex">
+                                    <div class="textfield-search one-third"><input type="text" class="form-control"
+                                            placeholder="Search Location"></div>
+
+                                    <div class="check-in one-third"><input type="text" id="start_date"
+                                            class="form-control" placeholder="Start date"></div>
+
+                                    <div class="check-out one-third"><input type="text" id="return_date"
+                                            class="form-control" placeholder="Return date"></div>
+                                    <div class="select-wrap one-third">
+                                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Guest</option>
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3+</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="submit" class="search-submit btn btn-primary" value="Find Car">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                        aria-labelledby="v-pills-settings-tab">
+                        <div class="block-17">
+                            <form action="" method="post" class="d-block d-lg-flex">
+                                <div class="fields d-block d-lg-flex">
+                                    <div class="textfield-search one-third one-third-1"><input type="text"
+                                            class="form-control" placeholder="Search Location"></div>
+
+
+                                    <div class="check-out one-third one-third-1"><input type="text" id="start_date"
+                                            class="form-control" placeholder="Check-out date"></div>
+
+                                    <div class="select-wrap one-third one-third-1">
+                                        <div class="icon"></div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Categories</option>
+                                            <option value="">Suite</option>
+                                            <option value="">Super Deluxe</option>
+                                            <option value="">Economy</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="submit" class="search-submit btn btn-primary" value="Find Cruise">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!---End of Search section-->
+<!---Welcome/about section-->
+<section class="about-section mt-5" id="sec2">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 text-center heading-section mb-5">
+                <h2 class="text-black mb-2">Welcome To Toumie</h2>
+                <p> --- Some basic features of travel --- </p>
+            </div>
+        </div>
+        <div class="row img-wrap mb-5 mb-lg-0">
+            <div class="col-12">
+                <div class="row">
+                    <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
+                        <a href="#" class="effect">
+                            <img src="./culture.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1">
+                        <h2 class="text-black">Culture</h2>
+                        <p class="mb-4">
+                            Culture is the first thing you need to consider when you going somewhere.
+                        </p>
+                        <a href="./Culture2/culture.html" class="btn btn-about">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+            <div class="col-12">
+                <div class="row">
+                    <div class="mb-4 margin-lg-0 col-lg-6">
+                        <a href="#" class="effect">
+                            <img src="./history.jpg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 ml-auto align-self-center order-lg-1">
+                        <h2 class="text-black">History</h2>
+                        <p class="mb-4">
+                            The thing make you to get to know that place better.
+                        </p>
+                        <a href="./History/History.html" class="btn btn-about">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------->
+        <div class="row img-wrap mb-5 mb-lg-0">
+            <div class="col-12">
+                <div class="row">
+                    <div class="mb-4 margin-lg-0 col-lg-6 order-lg-2">
+                        <a href="#" class="effect">
+                            <img src="./natural.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1">
+                        <h2 class="text-black">Nature</h2>
+                        <p class="mb-4">
+                            The most important thing that you deserve about your trip.
+                        </p>
+                        <a href="./Natural/Natural.html" class="btn btn-about">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------->
+    </div>
+</section>
+<!------------->
+<!---Popular Places-->
+<section>
+    <!-- Popular Places -->
+    <div class="popular section-bg img-effect mt-5" id="sec3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title text-center">
+                        <h1 class="text-white">Popular Places </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ End of Popular Places-->
+    <!-- Other Popular  -->
+    <div class="all-image">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-5">
+                    <div class="single-img">
+                        <div class="img-thumb">
+                            <img src="./Huế.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <div class="title">
+                                <h3>Hue imperial citadel</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-7">
+                    <div class="single-img">
+                        <div class="img-thumb">
+                            <img src="./Nha Trang.jpg" alt="">
+                        </div>
+
+                        <div class="img-hover">
+                            <div class="title">
+                                <h3>Nha Trang beach</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single-img radial">
+                        <div class="img-thumb">
+                            <img src="./hạ long.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <div class="title">
+                                <h3>Ha Long bay</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single-img radial">
+                        <div class="img-thumb">
+                            <img src="./Hội an.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <div class="title">
+                                <h3>Hoi An ancient town </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-lg-4">
+                    <div class="single-img radial">
+                        <div class="img-thumb">
+                            <img src="./Phú quốc.jpg" alt="">
+                        </div>
+                        <div class="img-hover">
+                            <div class="title">
+                                <h3>Phu Quoc island</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--end of Popular Places-->
+
+<!--Food Section-->
+<section class="product-section bg-img py-3" id="sec4">
+    <div class="container">
+        <div class=" row justify-content-center pb-5">
+            <div class="col-md-7 heading-section text-center">
+                <h2 class="font-weight-bold text-color glow">
+                    Popular food
+                </h2>
+            </div>
+        </div>
+        <!--End of title-->
+        <div class="row">
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Bún\ bò.jpeg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="out"> Được yêu thích bởi khách nội địa </span>
+                        <span class="category font-weight-bold">Huế</span>
+                        <h2 class="text-white">Bún bò</h2>
+                        <span class="price">30.000 VNĐ - 60.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Phở.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="day">Được yêu thích bởi khách nước ngoài</span>
+                        <span class="category font-weight-bold">Hà Nội</span>
+                        <h2 class="text-white">Phở </h2>
+                        <span class="price">30.000 VNĐ - 60.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Chả\ mực.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="week">Người bản địa giới thiệu </span>
+                        <span class="category font-weight-bold">Hạ Long</span>
+                        <h2 class="text-white">Chả mực giã tay</h2>
+                        <span class="price">100.000 VNĐ - 500.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Nem\ nướng.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="category font-weight-bold">Nha Trang</span>
+                        <h2 class="text-white">Nem nướng</h2>
+                        <span class="price">30.000 VNĐ - 50.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Mỳ\ quảng.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="category font-weight-bold">Đà Nẵng</span>
+                        <h2 class="text-white">Mỳ Quảng</h2>
+                        <span class="price">30.000 VNĐ - 60.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Cơm\ tấm.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="category font-weight-bold">Sài Gòn</span>
+                        <h2 class="text-white">Cơm tấm</h2>
+                        <span class="price">30.000 VNĐ - 100.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Bánh\ hỏi.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="category font-weight-bold">Cần Thơ</span>
+                        <h2 class="text-white">Bánh hỏi</h2>
+                        <span class="price">30.000 VNĐ - 60.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+            <div class="col-md-3 d-flex">
+                <div class="product glow">
+                    <div class="img d-flex align-items-center justify-content-center"
+                        style="background-image:url(./Bánh\ tráng.jpg);">
+                        <div class="icons">
+                            <p class="icon-block d-flex">
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-heart"></i>
+                                </a>
+                                <a href="#" class="d-flex align-items-center justify-content-center">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="text text-center">
+                        <span class="category font-weight-bold">Đà Lạt</span>
+                        <h2 class="text-white">Bánh tráng nướng</h2>
+                        <span class="price">10.000 VNĐ - 30.000 VNĐ</span>
+                    </div>
+                </div>
+            </div>
+            <!----->
+        </div>
+        <!-- <div class="row justify-content-center">
+            <div class="col-md-4">
+                <a href="#"class="btn btn-prod d-block">
+                    View all products
+                    <i class="fas fa-carrot"></i>
+                </a>
+            </div>
+        </div> -->
+    </div>
+</section>
+<!--End of Product Section-->
+
+
+<!---services Section-->
+<section id="services" class="services section-bg" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="section-title">
+                    <h2>Services We Provide</h2>
+                    <p>
+                        Good food, best place, interesting activities,... everything is waiting for you!
+                    </p>
+                </div>
+            </div>
+            <!----->
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="icon-circle purple">
+                            <div class="icon">
+                                <i class="fas fa-drumstick-bite"></i>
+                            </div>
+                            <h4 class="text-white">Good Food</h4>
+                            <p>You can try many good foods in the place which you come </p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+                        <div class="icon-circle pink">
+                            <div class="icon">
+                                <i class="fas fa-umbrella-beach"></i>
+                            </div>
+                            <h4 class="text-white">Beach Resort</h4>
+                            <p>Nha Trang, Phu Quoc,... countless good options for you  </p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-md-6 d-flex align-items-stretch mt-4">
+                        <div class="icon-circle yellow">
+                            <div class="icon">
+                                <i class="fas fa-hiking"></i>
+                            </div>
+                            <h4 class="text-white">Mountain-climbing</h4>
+                            <p> Many hills, mountains for you to burn energy</p>
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="col-md-6 d-flex align-items-stretch mt-4">
+                        <div class="icon-circle blue">
+                            <div class="icon">
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <h4 class="text-white">Home Stay</h4>
+                            <p>A good way to more understand the place you in </p>
+                        </div>
+                    </div>
+                    <!---->
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!---End of Services Section-->
+
+<!---Team Section-->
+<section class="chef my-5" id="chef">
+    <div class="container">
+        <h2 class="text-center">
+            About Us 
+        </h2>
+        <div class="row">
+            <div class="col-sm-3 col-xs-6">
+                <div class="card card-block">
+                    <a href="#">
+                        <img src="./bear3.png"class="chef-img" alt="">
+                        <div class="card-title-wrap">
+                            <span class="card-title">
+                                Nhu Bach
+                            </span>
+                            <span class="card-text"> JS </span>
+                        </div>
+                        <div class="chef-over">
+                            <h4 class="hidden-md-down">
+                                Connect with Me
+                            </h4>
+                            <nav class="social-nav">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                            </nav>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!---->
+            <div class="col-sm-3 col-xs-6">
+                <div class="card card-block">
+                    <a href="#">
+                        <img src="./bear1.png"class="chef-img" alt="">
+                        <div class="card-title-wrap">
+                            <span class="card-title">
+                                Ngoc Mai
+                            </span>
+                            <span class="card-text"> HTML / CSS </span>
+                        </div>
+                        <div class="chef-over">
+                            <h4 class="hidden-md-down">
+                                Connect with Me
+                            </h4>
+                            <nav class="social-nav">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                            </nav>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!---->
+            <div class="col-sm-3 col-xs-6">
+                <div class="card card-block">
+                    <a href="#">
+                        <img src="./bear2.png"class="chef-img" alt="">
+                        <div class="card-title-wrap">
+                            <span class="card-title">
+                                Phuc Sang
+                            </span>
+                            <span class="card-text">JS </span>
+                        </div>
+                        <div class="chef-over">
+                            <h4 class="hidden-md-down">
+                                Connect with Me
+                            </h4>
+                            <nav class="social-nav">
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+
+                            </nav>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!--- End of Team Section-->
+
+
+
+<footer id="footer">
+    <div class="footer-newsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h4>ANY QUESTION ? </h4>
+                    <p>Nếu có bất kì vấn đề nào, hãy viết cho chúng tôi. </p>
+                    <form>
+                        <input type="email" name="email">
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4">
+        <div class="copyright">
+            &copy;Copyright<strong><span> Toumie </span></strong>
+            .All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by<a href="#"> Mike</a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<body>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
