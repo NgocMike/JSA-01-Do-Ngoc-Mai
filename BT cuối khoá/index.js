@@ -36,6 +36,3 @@ SignInForm.addEventListener("submit", (ev) => {
     }
     document.querySelector("form").reset()
 })
-
-// console.log (SignInForm.email.value)
-// console.log (SignInForm.password.value)
