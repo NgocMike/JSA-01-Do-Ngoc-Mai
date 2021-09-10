@@ -90,6 +90,8 @@ body {
 
 /*====End of Navabr==*/
 /*====Hero Section===*/
+
+
 .hero-wrap {
     width: 100%;
     height: 850px;
@@ -122,7 +124,6 @@ body {
     line-height: 1.0;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .main-text p {
@@ -131,16 +132,17 @@ body {
     /* font size ở html */
 }
 
-/* .btn-hero {
-    background-color: #030157 !important;
-    color: #fff !important;
+.btn-hero {
+    background-color: white !important;
+    color: rgb(27, 27, 75) !important;
+    font-size: 25px !important;
     margin-right: 5px;
     margin-left: 5px;
     animation: skew 3s infinite;
     animation-direction: normal;
-    transform: skew(20deg);
+    transform: skew(15deg);
     animation-direction: alternate;
-    padding: 5px 17px;
+
 }
 
 @keyframes skew {
@@ -151,7 +153,7 @@ body {
     100% {
         transform: skewX(-20deg);
     }
-} */
+}
 
 
 /*====End of Hero Section===*/
@@ -732,7 +734,8 @@ body {
   
   .chef .card-title-wrap .card-title {
     font-size: 24px;
-    color: #000;
+    color: rgb(19, 19, 77);
+    font-weight: bold;
   }
   
   .chef .card-title-wrap .card-text {
